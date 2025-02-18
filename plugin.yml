@@ -10,3 +10,6 @@ permissions:
     default: op
   lobbycore.command.lobby:
     default: true
+    
+  lobbycore.command.fly:
+    default: op

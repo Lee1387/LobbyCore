@@ -31,8 +31,7 @@ class SetLobbyCommand extends Command {
         $currentWorld = $sender->getWorld()->getFolderName();
 
         if (!in_array($currentWorld, $lobbyWorlds)) {
-            $sender->sendMessage(TextFormat::RED . "This command can only be used in lobby worlds!");
-            $sender->sendMessage(TextFormat::GRAY . "Configured lobby worlds: " . implode(", ", $lobbyWorlds));
+            $sender->sendMessage(TextFormat::RED . "This command can only be used in the lobby world!");
             return false;
         }
 

@@ -2,6 +2,7 @@
 
 namespace Lee1387\LobbyCore;
 
+use Lee1387\LobbyCore\commands\FlyCommand;
 use Lee1387\LobbyCore\commands\LobbyCommand;
 use Lee1387\LobbyCore\commands\SetLobbyCommand;
 use Lee1387\LobbyCore\events\EventListener;
@@ -53,6 +54,7 @@ class Main extends PluginBase {
         
         if ($this->isLobbyServer) {
             $commandMap->register("lobbycore", new SetLobbyCommand());
+            $commandMap->register("lobbycore", new FlyCommand());
         }
     }
     
