@@ -1,0 +1,59 @@
+# LobbyCore Configuration
+
+# Config Version (DO NOT CHANGE THIS)
+config-version: 1.0.0
+
+# The world(s) where lobby features are active
+lobby-worlds:
+  - "world"
+  - "world1"
+
+# The server where lobby features are active (/lobby command stays active network wide)
+proxy-address: "0.0.0.0:19132" # Waterdog Proxy Address
+interal-address: "127.0.0.1:19134" # Internal Lobby Server Address
+lobby-server: "lobby" # Server name in your Waterdog config
+
+lobby:
+  world: "world"
+  x: 0
+  y: 64
+  z: 0
+  yaw: 0
+  pitch: 0
+
+messages:
+  welcome:
+    - ""
+    - "§8§l▪ §r§b§lWELCOME TO THE SERVER"
+    - "§8§l▪ §r§7Welcome, §b{player}§7!"
+    - ""
+
+# The name of the compass item given to players
+compass-name: "Game Selector"
+
+# Prevention Settings
+preventions:
+  item-drop: true
+  inventory-move: true
+  damage: true
+  hunger: true
+  block-break: true
+  block-place: true
+
+# Player Settings
+default-gamemode: "adventure" # Options: survival, creative, adventure, spectator
+
+# Game Selector Menu Settings
+menu:
+  buttons:
+    # Example World teleport button
+    survival:
+      text: "§l§aSurvival"
+      type: "world"
+      target: "survival" # Must be an existing world name
+
+    # Example Server transfer button
+    skywars:
+      text: "§l§cSkyWars"
+      type: "server"
+      target: "127.0.0.1:19135" # Must be in format "address:port"

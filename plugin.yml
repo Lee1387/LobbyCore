@@ -1,0 +1,12 @@
+name: LobbyCore
+version: 1.0.0
+main: Lee1387\LobbyCore\Main
+api: 5.0.0
+author: Lee1387
+depend: ["FormAPI"]
+
+permissions:
+  lobbycore.command.setlobby:
+    default: op
+  lobbycore.command.lobby:
+    default: true
